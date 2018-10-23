@@ -51,7 +51,7 @@ class App extends Component {
 					currentScore={this.state.currentScore}
 					highScore={this.state.highScore}
 					miss={this.state.miss} />
-				<div className="container">
+				<div className="container main">
 					<Images 
 						images={this.state.images}
 						handleImageClick={this.handleImageClick}

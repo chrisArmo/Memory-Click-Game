@@ -11,8 +11,8 @@ import React from "react";
 const Nav = (props) => (
     <div>
         <nav className={props.miss 
-            ? "navbar sticky-top py-1 red-bottom"
-            : "navbar sticky-top py-1 cyan-bottom"} >
+            ? "navbar fixed-top py-1 red-bottom"
+            : "navbar fixed-top py-1 cyan-bottom"} >
             <div className="container d-flex flex-column flex-sm-row">
                 <h4 className="navbar-brand">MemClicker</h4>
                 <ul className="navbar-nav ml-sm-auto mt-sm-2 d-flex flex-column flex-sm-row">
