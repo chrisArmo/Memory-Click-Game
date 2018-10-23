@@ -1,1 +1,87 @@
+/* Nav + Images -------------------- */
 
+.navbar,
+.images img {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+/* App -------------------- */
+
+.App {
+    font-family: "Space Mono", monospace !important;
+    font-weight: 700;
+}
+
+/* Nav -------------------- */
+
+.navbar {
+    background: #192037;
+    color: #3cf9ff;
+}
+
+.navbar h4 {
+    font-weight: 700;
+}
+
+.navbar a {
+    color: inherit;
+}
+
+.navbar .navbar-toggle-icon {
+    background-color: #3cf9ff;
+}
+
+/* Images -------------------- */
+
+.images .img-fluid {
+    max-width: 300px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-out;
+}
+
+@media screen and (min-width: 576px) {
+    .images .img-fluid {
+        max-width: 160px;
+    }
+}
+
+.images .img-fluid:hover {
+    box-shadow: 0 0 10px 3px rgba(150, 246, 249, 1);
+}
+
+/* Bottoms -------------------- */
+
+.red-bottom {
+    border-bottom: 4px solid #ff5a0e;
+}
+
+.cyan-bottom {
+    border-bottom: 4px solid #3cf9ff;
+}
+
+/* Shake -------------------- */
+
+.shake {
+    animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%, 60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
